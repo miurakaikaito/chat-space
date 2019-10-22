@@ -27,7 +27,7 @@ Things you may want to cover:
 |------|----|-------|
 |email|string|null: false|
 |password|string|null: false|
-|username|string|null: false|
+|name|string|null: false|
 ### Association
 -  has_many :groups, through:groups_users
 -  has_many :groups_users
@@ -37,8 +37,8 @@ Things you may want to cover:
 |------|----|-------|
 |body|text|
 |image|string|
-|groups_id|integer|null false|
-|users_id|integer|null false|
+|group_id|integer|null false|
+|user_id|integer|null false|
 
 ## Association
 -  belongs_to :group
