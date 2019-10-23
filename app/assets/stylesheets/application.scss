@@ -1,8 +1,5 @@
 @import "./reset";
-/*!
- *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */
+
  @font-face {
   font-family: 'FontAwesome';
   src: url("/assets/fontawesome-webfont-7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979.eot");
@@ -2936,13 +2933,6 @@
   }
 }
 
-/*!
- * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
- * http://cssreset.com
- * Copyright 2012 Yahoo! Inc. All rights reserved.
- * http://yuilibrary.com/license/
- */
-
 html {
   color: #000;
   background: #FFF;
@@ -3006,7 +2996,7 @@ input, textarea, select {
 }
 
 input, textarea, select {
-  * font-size: 100%;
+   font-size: 100%;
 }
 
 legend {
