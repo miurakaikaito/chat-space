@@ -6,6 +6,7 @@
   font-style: normal;
 }
 
+
 html {
   color: #000;
   background: #FFF;
@@ -138,16 +139,16 @@ legend {
     padding: 20px 20px 0;
     overflow: scroll;
 
-    &: {
+    .group {
       margin-bottom: 40px;
     }
 
-    .&:__group-name {
+    &__group-name {
       font-size: 15px;
       margin-bottom: 5px;
     }
 
-    .&:__latest-message {
+    &__latest-message {
       font-size: 11px;
     }
   }
@@ -214,24 +215,24 @@ legend {
       padding-bottom: 40px;
     }
 
-    .message__upper-info {
+    &__upper-info {
       display: flex;
       margin-bottom: 10px;
     }
 
-    .message__upper-info__talker {
+    &__upper-info__talker {
       color: #434a54;
       font-size: 16px;
       font-weight: bold;
     }
 
-    .message__upper-info__date {
+    &__upper-info__date {
       color: #999999;
       font-size: 12px;
       margin-left: 10px;
     }
 
-    .message__text {
+    &__text {
       color: #434a54;
       font-size: 14px;
       margin-bottom: 10px;
