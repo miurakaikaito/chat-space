@@ -115,40 +115,40 @@ legend {
     display: flex;
     align-items: center;
     padding: 0 20px;
-  }
 
-  .side-header__box {
+
+  &__box {
     display: flex;
     justify-content: space-between;
     width: 100%;
     font-weight: bold;
   }
 
-  .side-header__box__menu {
+  &__box__menu {
     display: flex;
 
     li {
       margin-left: 0.3rem;
     }
   }
-
+}
   .groups {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 20px 20px 0;
     overflow: scroll;
 
-    &: {
+    .group {
       margin-bottom: 40px;
-    }
 
-    .&:__group-name {
-      font-size: 15px;
-      margin-bottom: 5px;
-    }
+      &__group-name {
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
 
-    .&:__latest-message {
-      font-size: 11px;
+      &__latest-message {
+        font-size: 11px;
+      }
     }
   }
 }
@@ -164,19 +164,18 @@ legend {
     justify-content: space-between;
     border-bottom: solid 1px #eee;
     overflow: scroll;
-  }
 
-  .main-header__left-box {
+  &__left-box {
     margin-top: 35px;
   }
 
-  .main-header__left-box__current-group {
+  &__left-box__current-group {
     font-size: 20px;
     color: #333;
     margin-bottom: 15px;
   }
 
-  .main-header__left-box__member-list {
+  &__left-box__member-list {
     display: flex;
     font-size: 12px;
     color: #999999;
@@ -186,7 +185,7 @@ legend {
     }
   }
 
-  .main-header__edit-btn {
+  &__edit-btn {
     height: 40px;
     line-height: 40px;
     padding: 0 20px;
@@ -196,13 +195,14 @@ legend {
     right: 40px;
   }
 
-  .main-header a {
+  & a {
     color: #38aef0;
 
     &:visited, &:hover, &:active {
       color: #38aef0;
     }
   }
+}
 
   .messages {
     height: calc(100vh - 190px);
@@ -212,29 +212,29 @@ legend {
 
     .message {
       padding-bottom: 40px;
-    }
 
-    .message__upper-info {
+    &__upper-info {
       display: flex;
       margin-bottom: 10px;
     }
 
-    .message__upper-info__talker {
+    &__upper-info__talker {
       color: #434a54;
       font-size: 16px;
       font-weight: bold;
     }
 
-    .message__upper-info__date {
+    &__upper-info__date {
       color: #999999;
       font-size: 12px;
       margin-left: 10px;
     }
 
-    .message__text {
+    &__text {
       color: #434a54;
       font-size: 14px;
       margin-bottom: 10px;
+    }
     }
   }
 
@@ -249,9 +249,9 @@ legend {
       .input-box {
         position: relative;
         width: 100%;
-      }
+      
 
-      .input-box__text {
+      &__text {
         height: 50px;
         width: 100%;
         padding: 0 40px 0 10px;
@@ -259,7 +259,7 @@ legend {
         border-style: none;
       }
 
-      .input-box__image {
+      &__image {
         font-size: 1.3rem;
         position: absolute;
         top: 10px;
@@ -267,9 +267,10 @@ legend {
         cursor: pointer;
       }
 
-      .input-box__image__file {
+      &__image__file {
         display: none;
       }
+    }
 
       .submit-btn {
         width: 100px;
@@ -285,7 +286,7 @@ legend {
 }
 
 .account-page {
-  .account-page__inner {
+  &__inner {
     width: 980px;
     margin: 60px auto;
     padding: 60px;
@@ -293,7 +294,7 @@ legend {
     border: 1px solid #ddd;
     border-radius: 5px;
 
-    .account-page__inner--left, .account-page__inner--right {
+    &__inner--left, .account-page__inner--right {
       float: left;
       width: 50%;
     }
@@ -338,7 +339,7 @@ legend {
   .field {
     margin-bottom: 10px;
 
-    .field-label {
+    &-label {
       padding: 10px 0;
       letter-spacing: 1px;
       font-size: 14px;
@@ -349,7 +350,7 @@ legend {
       }
     }
 
-    .field-input input {
+    &-input input {
       width: 100%;
       padding: 10px;
       letter-spacing: 1px;
@@ -437,7 +438,7 @@ legend {
     text-align: center;
   }
 
-  .chat-group-form__errors {
+  &__errors {
     margin: 30px 0;
     padding: 20px 40px;
     border: 1px solid #ddd;
@@ -463,7 +464,7 @@ legend {
     }
   }
 
-  .chat-group-form__field {
+  &__field {
     margin-top: 30px;
 
     &:after {
@@ -472,7 +473,7 @@ legend {
       display: block;
     }
 
-    .chat-group-form__field--left {
+    &__field--left {
       float: left;
       width: 30%;
       padding-right: 20px;
@@ -480,19 +481,19 @@ legend {
       box-sizing: border-box;
     }
 
-    .chat-group-form__field--right {
+    &__field--right {
       float: right;
       width: 70%;
     }
 
-    .chat-group-form__label {
+    &__label {
       display: block;
       line-height: 50px;
       font-weight: bold;
       text-align: right;
     }
 
-    .chat-group-form__input {
+    &__input {
       float: left;
       width: 100%;
       line-height: 30px;
@@ -513,20 +514,20 @@ legend {
       display: block;
     }
 
-    .chat-group-user__name {
+    &__name {
       float: left;
     }
 
-    .chat-group-user__btn {
+    &__btn {
       float: right;
       display: inline-block;
       cursor: pointer;
 
-      &.chat-group-user__btn--add {
+      &__btn--add {
         color: #38aef0;
       }
 
-      &.chat-group-user__btn--remove {
+      &__btn--remove {
         color: #f05050;
       }
     }
