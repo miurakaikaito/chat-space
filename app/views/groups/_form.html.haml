@@ -29,9 +29,9 @@
           %p.chat-group-user__name= current_user.name
 
         - group.users.each do |user|
-          - if f.hidden_field :user_id, value: current_user.id 
+          - if current_user.name != user.name
             .chat-group-user.clearfix.js-chat-member
-              %input{name: "group[user_ids][]", type: "hidden", value: user.id}
+              %input{ f.hidden_field 'group[user_ids][]', value: current_user.id}
               %p.chat-group-user__name
                 = user.name 
               %a.user-search-remove.chat-group-user__btn.chat-group-user__btn--remove.js-remove-btn
