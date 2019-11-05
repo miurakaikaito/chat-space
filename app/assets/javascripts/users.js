@@ -57,7 +57,7 @@ $(function() {
       alert("通信エラーです。ユーザーが表示できません。");
     });
   });
-  $(document).on("click", ".chat-group-user__btn--add", function() {
+  $("#user-search-result").on("click", ".chat-group-user__btn--add", function() {
     const userName = $(this).attr("data-user-name");
     const userId = $(this).attr("data-user-id");
     $(this)
@@ -67,7 +67,7 @@ $(function() {
     addDeleteUser(userName, userId);
     addMember(userId);
   });
-    $(document).on("click", ".user-search-remove", function() {
+    $('.js-add-user').on("click", ".user-search-remove", function() {
       $(this)
         .parent()
         .remove();
